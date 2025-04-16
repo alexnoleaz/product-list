@@ -1,0 +1,22 @@
+.product-selected {
+  background-color: #cce5ff !important;
+}
+
+.product-expensive {
+  border: 2px solid #dc3545 !important;
+  background-color: #f88379 !important;
+}
+
+.product-cheap {
+  border: 2px solid #28a745 !important;
+  background-color: #d4edda !important;
+}
+
+/* Combinaciones */
+.product-selected.product-expensive {
+  background-color: #f5c6cb !important;
+}
+
+.product-selected.product-cheap {
+  background-color: #bee5eb !important;
+}

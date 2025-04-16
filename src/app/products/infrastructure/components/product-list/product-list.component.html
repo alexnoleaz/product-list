@@ -1,0 +1,12 @@
+<ul class="list-group shadow-sm">
+  <li
+    *ngFor="let product of products"
+    (click)="onSelect(product)"
+    [ngClass]="getCssClasses(product)"
+    class="list-group-item d-flex justify-content-between align-items-center mb-2"
+    style="cursor: pointer"
+  >
+    <span>{{ product.name }}</span>
+    <span class="badge bg-secondary">${{ product.price }}</span>
+  </li>
+</ul>

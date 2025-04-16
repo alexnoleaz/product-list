@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <h2 class="text-center">Lista de Productos</h2>
+  <app-product-list (select)="onProductSelected($event)"></app-product-list>
+
+  <h3 class="mt-4">Detalles del Producto</h3>
+  <app-product-detail [product]="selectedProduct"></app-product-detail>
+</div>
+
+<router-outlet />
